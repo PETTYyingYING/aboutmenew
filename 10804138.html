@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">	
+        
         <title>AboutMe</title>  
         <style type="text/css">
+
 	         h1{
 		            font-family: Microsoft JhengHei;
                 text-decoration:underline;
@@ -26,10 +28,7 @@
                 color:black;
             }
             
-            li:first-child{
-                background:#ccc;
-            }
-
+            
             a:link{
               color:＃black;
             }
@@ -45,6 +44,38 @@
             a:active{
               color: #FAFAFA;
             }
+
+            #all{
+              width:1500px;
+              height:3500px
+            }
+            #up{
+              height:200px
+            }
+            #leftside{
+              float:left;
+              width:150px; 
+              height:3000px;
+              background-color:#9A7F65
+            }
+            #rightside{
+              float:right;
+              width:150px; 
+              height:3000px;
+              background-color:#9A7F65
+            }
+            #main{
+              padding-left: 200px;
+              width:auto;
+              height:3000px;
+              background-color:#C9C1AA;
+            }
+            #footer{
+              clear:both;
+              height:150px;
+              background-color: #6C6658
+            }
+
             
             #div1{
                 width:100%;
@@ -65,19 +96,20 @@
         </style>
     </head>
     <body>
-        <div style="width:1500px;height:3500px">
-            <div>
-                <div style="height:35px;background-color:#6C6658"></div>
+        <div id="all">
+            <div id="up">
+                <div style="height:50px;background-color:#6C6658"></div>
                 <img src= "up1.png"style="width:  1500px;"/>
             </div>
-            <div id="leftsild"style="width:200px; float:left;height:3000px;background-color:#9A7F65">
+            <div id="leftside">
               <h1><a href="10804138.html"target="_blank">HOME</a></h1>
               <h1><a href="10804138_FUN.html"target="_blank">FUN</a></h1>
+              <h1><a href="10804138_form.html"target="_blank">FORM</a></h1>
             </div>
-            <div id="rightside"style="width:200px; float:right;height:3000px;background-color:#9A7F65">
+            <div id="rightside">
             </div>
 
-            <div id="main"style="padding-left: 200px;width:200px;height:3000px;background-color:#C9C1AA;">
+            <div id="main">
               <div id="div1"style=" margin-top: 0px;width:1100px;background-color:#C9C1AA;">
                 <br>
                 <br>
@@ -101,6 +133,7 @@
                       <br>
                       <br>
                       <img src="taipei.png"style="padding-left: 100px;width:  800px;">
+                      
                       <br>
                       <br>
                     </div>
@@ -109,6 +142,7 @@
                 <hr>
               </div>
             </div>
+            <div id="footer"></div>
         </div>
     </body>
 </html>       

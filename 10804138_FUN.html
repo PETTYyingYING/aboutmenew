@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">	
+        
         <title>AboutMe</title>  
         <style type="text/css">
 	        h1{
@@ -51,6 +52,37 @@
               color: #FAFAFA;
             }
 
+            #all{
+              width:1500px;
+              height:3500px
+            }
+            #up{
+              height:200px
+            }
+            #leftside{
+              float:left;
+              width:150px; 
+              height:3000px;
+              background-color:#9A7F65
+            }
+            #rightside{
+              float:right;
+              width:150px; 
+              height:3000px;
+              background-color:#9A7F65
+            }
+            #main{
+              padding-left: 200px;
+              width:auto;
+              height:3000px;
+              background-color:#C9C1AA;
+            }
+            #footer{
+              clear:both;
+              height:150px;
+              background-color: #6C6658
+            }
+
             
             #bg7{
                 position:fixed;
@@ -79,22 +111,24 @@
             #div1 img:hover{
                 transform: scale(1.2);
             }
+
         </style>
     </head>
     <body>
-        <div style="width:1500px;height:3500px">
-            <div>
-                <div style="height:35px;background-color:#6C6658"></div>
+        <div id="all">
+            <div id="up">
+                <div style="height:50px;background-color:#6C6658"></div>
                 <img src= "up1.png"style="width:  1500px;"/>
             </div>
-            <div id="leftsild"style="width:200px; float:left;height:3000px;background-color:#9A7F65">
-              <h1><a href="10804138.html">HOME</a></h1>
-              <h1><a href="10804138_FUN.html">FUN</a></h1>
+            <div id="leftside">
+              <h1><a href="10804138.html"target="_blank">HOME</a></h1>
+              <h1><a href="10804138_FUN.html"target="_blank">FUN</a></h1>
+              <h1><a href="10804138_form.html"target="_blank">FORM</a></h1>
             </div>
-            <div id="rightside"style="width:200px; float:right;height:3000px;background-color:#9A7F65">
+            <div id="rightside">
             </div>
 
-            <div id="main"style="padding-left: 200px;width:200px;height:3000px;background-color:#C9C1AA;">
+            <div id="main">
                 <div id="div1"style=" margin-top: 0px;width:1100px;background-color:#C9C1AA;">
                 <h1 style="margin-top: 0px; padding-top: 25px;"><mark>Trip</mark></h1>
                 <span style="box-shadow:1px 1px 3px gray;margin-right:8px;">
@@ -122,7 +156,8 @@
                     <img class="mySlides"src="5.jpg"style="display:block;width:800px;padding-left:140px;padding-top:30px;">
                 </div>
                 </div>
-            </div>      
+            </div>
+            <div id="footer"></div>      
         </div>
     </body>
     <script>
@@ -141,16 +176,6 @@
         setTimeout(carousel, 2000); 
       }
     </script>
-    <script>
-      function openNav() {
-        document.getElementById("main").style.marginLeft = "25%";
-        document.getElementById("mySidebar").style.width = "25%";
-        document.getElementById("mySidebar").style.display = "block";
-      }
-      function closeNav() {
-        document.getElementById("main").style.marginLeft = "0%";
-        document.getElementById("mySidebar").style.display = "none";
-         document.getElementById("openNav").style.display = "inline-block";
-       }
-     </script>
+
+     
 </html>                
